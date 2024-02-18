@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import React, { PureComponent, ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 import type { Persistor } from '../types'
 
 type Props = {
@@ -13,7 +13,7 @@ type State = {
   bootstrapped: boolean,
 }
 
-export class PersistGate extends PureComponent<Props, State> {
+export class PersistGate extends React.PureComponent<Props, State> {
   static defaultProps = {
     children: null,
     loading: null,
